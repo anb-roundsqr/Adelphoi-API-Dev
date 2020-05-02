@@ -33,7 +33,7 @@ urlpatterns = [
          views.LocationModify.as_view()),  # Modify locations
     path('program_pcr/<pk>/', views.RecommndedProgramPCR.as_view()),
     # path('render_pdf/<pk>/',views.render_pdf),
-    path('dataSave', views.dataSave),# not using
+    path('dataSave', views.dataSave),  # not using
     path('program/<pk>/', views.Adelphoi_program.as_view()),
 
     path('referral_list', views.Refferal_list.as_view()),
