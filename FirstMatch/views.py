@@ -1164,8 +1164,7 @@ class AdelphoiList(ListCreateAPIView):
                             else:
                                 query5 = Adelphoi_Mapping.objects.filter(
                                     program=program_pred,
-                                    gender=serializer.validated_data.get(s
-                                        'gender'),
+                                    gender=serializer.validated_data.get('gender'),
                                     level_of_care=level_pred,
                                     facility_type=facility_preds
                                 )
