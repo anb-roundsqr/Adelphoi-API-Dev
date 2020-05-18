@@ -243,6 +243,7 @@ class ModelTests(models.Model):
         auto_now=True)
 
     program = models.IntegerField(db_column='Program')
+    model_pred = models.IntegerField(db_column= 'Model_Pred_Program',null=True,blank=True)
     model_program = models.CharField(db_column='Model_Program',
                                      max_length=100)
     confidence = models.IntegerField(db_column='Confidence')
