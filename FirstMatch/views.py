@@ -585,7 +585,7 @@ class AdelphoiList(ListCreateAPIView):
                 if serializer.validated_data.get('gender') == 1:
                     logger.info(
                         'where Exclusionary_Criteria-False,'
-                        ' gender-1,condition_program-3'
+                        ' gender-1(Female),condition_program-3'
                     )
                     condition_program = 3
                     query2 = Adelphoi_Mapping.objects.filter(
@@ -683,7 +683,7 @@ class AdelphoiList(ListCreateAPIView):
                     if serializer.validated_data.get('inclusionary_criteria'):
                         logger.info(
                             'where Exclusionary_Criteria-False,'
-                            ' gender-2,'
+                            ' gender-2(male),'
                             ' inclusionary_criteria=true,'
                             'condition_program-2'
                         )
@@ -791,7 +791,7 @@ class AdelphoiList(ListCreateAPIView):
                                 'alcohol_Use')
                             logger.info(
                                 'where Exclusionary_Criteria-False,'
-                                ' gender-1,'
+                                ' gender-2(male),'
                                 'inclusionary_criteria=false,'
                                 'program_pred-2'
                             )
@@ -1033,9 +1033,9 @@ class AdelphoiList(ListCreateAPIView):
                                 'alcohol_Use')
                             logger.info(
                                 'where Exclusionary_Criteria-False,'
-                                ' gender-1,'
+                                ' gender-2(male),'
                                 'inclusionary_criteria=false,'
-                                'program_pred-2'
+                                'program_pred-1 0r 3'
                             )
                             # #server
                             # p13_model = pickle.load(
